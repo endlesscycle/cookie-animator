@@ -131,8 +131,8 @@ void cookie::Bone::Rotate(const double AnglePlus)
 		const double XDelta = XStart - XOrigin;
 		const double YDelta = YStart - YOrigin;
 		
-		const double XTransf = XOrigin + 50.0 * cos(Angle * M_PI / 180);
-		const double YTransf = YOrigin + 50.0 * sin(Angle * M_PI / 180);
+		const double XTransf = XOrigin + 50.0 * sin(Angle * M_PI / 180); //FIXPLACE
+		const double YTransf = YOrigin + 50.0 * cos(Angle * M_PI / 180); //FIXPLACE
 		
 		/*
 		const double XTransf = XOrigin + XDelta * cos(Angle * M_PI / 180) - YDelta * sin(Angle *M_PI / 180);
